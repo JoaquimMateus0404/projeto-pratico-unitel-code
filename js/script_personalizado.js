@@ -1,31 +1,84 @@
+
 /*
+function pegardados(){
 
-const URL_TO_FETCH = 'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=9874c05977a54de68170b833478c1394';
+	fetch("https://newsapi.org/v2/everything?domains=wsj.com&apiKey=9874c05977a54de68170b833478c1394" ,
+		{
+			method: 'get' 
+	})
+	.then(response => response.json())
+	.then(function(corpo){ return corpo } )
+	.catch(err => console.error(err));
+}
 
-fetch(URL_TO_FETCH, {
-  method: 'get' 
-})
-.then(function(response) {
-  
-    console.log(response);
+function main(){
 
-})
-.catch(function(err) { 
-  console.error(err);
+
+
+	var posts =	pegardados();
+
+	console.log(posts.articles)
+}
+
+main()
+
+var qtd = document.getElementsByClassName('qty');
+document.getElementById('minus').addEventListener('click', function(){
+
+	
+	console.log('Clicou aqui!');
 });
 
+document.getElementById('plus').addEventListener('click', function(){
+
+	console.log('Clicou aqui!');
+});
+
+
+
+
+
+
 */
+const artigos_posts = document.querySelector('.posts_blog');
+function retrieve (e){
+	const apiKey = "9874c05977a54de68170b833478c1394";
 
+	let topic = "covid 19";
 
-/*const options = {
-	method: 'POST',
-	headers: {
-		'X-RapidAPI-Host': 'dark-sky.p.rapidapi.com',
-		'X-RapidAPI-Key': '03e23f49f3msh847798f222e3701p17109djsn4dc278ff1126'
-	}
-};
+	let url = `https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`;
+	var postagem;
+	fetch(url).then((response) => {
 
-fetch('https://dark-sky.p.rapidapi.com/37.774929,-122.419418,2019-02-20', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));*/
+		return response.json();
+	}).then((posts) => {
+
+		posts.articles.forEach(artigos => {
+			let li = document.createElement('li')
+			let a = document.createElement('article')
+			 postagem = `
+
+			<article class="blog-post mb-3 bg-light">
+				<h2 class="blog-post-title">${artigos.title}</h2>
+				<p class="blog-post-meta">${artigos.publishedAt} by <a href="#">${artigos.author}</a></p>
+		
+				<p class="ellipsis">${artigos.description}</p>
+				<a href="./blog_info.php">
+					<strong class="text-primary">Continue lendo</strong>
+				</a>
+			</article>
+			
+			`;
+			a.innerHTML = postagem;
+			li.appendChild(a);
+
+			artigos_posts.appendChild(li);
+		});
+		
+	})
+	 
+	
+
+}
+
+retrieve()

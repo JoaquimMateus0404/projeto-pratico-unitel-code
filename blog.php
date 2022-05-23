@@ -18,75 +18,9 @@
                         </h3>
 
                         <!-- Conteudos do Blogger-->
-                        <article class="blog-post mb-3 bg-light">
-                            <h2 class="blog-post-title">Post 1</h2>
-                            <p class="blog-post-meta">Maio 20, 2021 by <a href="#">Duarte Gauss</a></p>
-                    
-                            <p class="ellipsis">This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-                            <a href="./blog_info.php">
-                                <strong class="text-primary">Continue lendo</strong>
-                            </a>
-                        </article>
-
-                        <article class="blog-post mb-3 bg-light">
-                            <h2 class="blog-post-title">Post 2</h2>
-                            <p class="blog-post-meta">Maio 20, 2021 by <a href="#">Duarte Gauss</a></p>
-                    
-                            <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-                            <a href="./blog_info.php">
-                                <strong class="text-primary">Continue lendo</strong>
-                            </a>
-                        </article>
-
-                        <article class="blog-post mb-3 bg-light">
-                            <h2 class="blog-post-title">Post 3</h2>
-                            <p class="blog-post-meta">Maio 20, 2021 by <a href="#">Duarte Gauss</a></p>
-                    
-                            <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-                            <a href="./blog_info.php">
-                                <strong class="text-primary">Continue lendo</strong>
-                            </a>
-                        </article>
-
-                        <article class="blog-post mb-3 bg-light">
-                            <h2 class="blog-post-title">Post 4</h2>
-                            <p class="blog-post-meta">Maio 20, 2021 by <a href="#">Duarte Gauss</a></p>
-                    
-                            <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-                            <a href="./blog_info.php">
-                                <strong class="text-primary">Continue lendo</strong>
-                            </a>
-                        </article>
-
-                        <article class="blog-post mb-3 bg-light">
-                            <h2 class="blog-post-title">Post 5</h2>
-                            <p class="blog-post-meta">Maio 20, 2021 by <a href="#">Duarte Gauss</a></p>
-                    
-                            <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-                            <a href="./blog_info.php">
-                                <strong class="text-primary">Continue lendo</strong>
-                            </a>
-                        </article>
-
-                        <article class="blog-post mb-3 bg-light">
-                            <h2 class="blog-post-title">Post 6</h2>
-                            <p class="blog-post-meta">Maio 20, 2021 by <a href="#">Duarte Gauss</a></p>
-                    
-                            <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-                            <a href="./blog_info.php">
-                                <strong class="text-primary">Continue lendo</strong>
-                            </a>
-                        </article>
-
-                        <article class="blog-post mb-3 bg-light">
-                            <h2 class="blog-post-title">Post 7</h2>
-                            <p class="blog-post-meta">Maio 20, 2021 by <a href="#">Duarte Gauss</a></p>
-                    
-                            <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-                            <a href="./blog_info.php">
-                                <strong class="text-primary">Continue lendo</strong>
-                            </a>
-                        </article>
+                        <ul class="posts_blog" style="list-style-type: none;">
+                        
+                        </ul>
                         <!-- End Conteudos do Blogger-->
 
                         <!--Paginacao-->

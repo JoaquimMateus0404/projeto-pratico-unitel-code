@@ -67,10 +67,10 @@
                                     </td>
     
                                     <td class="product-quantity">
-                                        <div class="quantity buttons_added">
-                                            <input type="button" class="minus" value="-">
+                                        <div class="quantity buttons_added" id="quantity">
+                                            <input type="button" class="minus" id="minus" value="-">
                                             <input type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
-                                            <input type="button" class="plus" value="+">
+                                            <input type="button" class="plus" id="plus" value="+">
                                         </div>
                                     </td>
     
@@ -100,8 +100,7 @@
 
          <section class="container mt-5">
              <div class="row d-flex align-items-center justify-content-center">
-                <div class=""></div>
-
+                
                 <div class="col-md-12 d-flex align-items-right justify-content-end ">
                     <div class="cart_totals  ">
                         <h2 class="text-info">Resumo da Compra</h2>
@@ -110,17 +109,17 @@
                             <tbody>
                                 <tr class="cart-subtotal">
                                     <th>Subtotal</th>
-                                    <td><span class="amount">R$15,00</span></td>
+                                    <td><span class="amount">KZs 3937</span></td>
                                 </tr>
 
                                 <tr class="shipping">
                                     <th>Frete</th>
-                                    <td>R$0,00</td>
+                                    <td>KZs 3937</td>
                                 </tr>
 
                                 <tr class="order-total">
                                     <th>Total</th>
-                                    <td><strong><span class="amount">R$15,00</span></strong> </td>
+                                    <td><strong><span class="amount">KZs 3937</span></strong> </td>
                                 </tr>
                             </tbody>
                         </table>

@@ -3,7 +3,7 @@
         <section class="container-fluid row">
             <ul class="nav col-md-9">
                 <li class="nav-item col-xl-2 col-lg-3 col-md-12 d-flex align-items-center">
-                    <a href="../index.php" class="menu">
+                    <a href="/" class="menu">
                         <i class="bi bi-house-fill"></i>
                         Home
                     </a>

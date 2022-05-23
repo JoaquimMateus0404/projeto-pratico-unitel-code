@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="../css/bootstrap-icons-1.8.2/bootstrap-icons.css">
 </head>
 
-<body>
-<section class="td bg-info">
+<body class="bg-dark">
+<section class="td container jumbotron text-center bg-dark">
     <main class="form-signin ">
         <form>
             
@@ -36,17 +36,23 @@
             <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
             </div>
 
-            <div class="row checkbox mb-3 align-items-center justify-content-center">
-                <div class="col-md-6">
-                    <a href="">Esqueci a senha</a>
-                </div>
-                <div class="col-md-6 d-flex  justify-content-end">
+                <div class="col-md-6 d-flex  justify-content-left">
                     <label>
                         <input type="checkbox" value="remember-me"> Lembrar-me
                     </label>
                 </div>
-            </div>
+
             <button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar Sessao</button>
+
+            <div class="row checkbox mb-3 mt-3 align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <a href="">Esqueci a senha</a>
+                </div>
+                <div class="col-md-6 d-flex  justify-content-center">
+                    <a href="">Registrar</a>
+                </div>
+            </div>
+            <hr>
             <p class="mt-5 mb-3 text-muted text-center ">&copy; 2022 CleanSoft. Todos os Direitos Reservados.</p>
         </form>
     </main>
