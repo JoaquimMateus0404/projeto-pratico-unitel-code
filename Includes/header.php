@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="">
+                        <a href="../login.php">
                             <i class="bi bi-person-fill"></i>
                             Entrar
                         </a>

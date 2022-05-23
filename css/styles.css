@@ -203,6 +203,112 @@ article.blog-post p.ellipsis {
   white-space: nowrap;
 }
 
+section.cabecalho {
+  margin-top: 10px;
+  padding: 0 20px;
+}
+section.cabecalho div.total {
+  padding: 10px 10px;
+  border: 1px solid #ddd;
+  width: 230px;
+  position: relative;
+}
+section.cabecalho div.total a {
+  font-size: 18px;
+  color: #666;
+}
+section.cabecalho div.total a span.cart-amunt {
+  color: #e67e22;
+  font-weight: 700;
+}
+section.cabecalho div.total a i.bi {
+  margin-left: 15px;
+}
+section.cabecalho div.total a span.product-count {
+  background: none repeat scroll 0 0 #e67e22;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 10px;
+  height: 20px;
+  padding-top: 2px;
+  position: absolute;
+  right: -10px;
+  text-align: center;
+  top: -10px;
+  width: 20px;
+}
+
+section.list_produto tbody.corpo td.imagem_produt img {
+  height: auto;
+  width: 70px;
+}
+section.list_produto tbody.corpo a:hover {
+  color: #e67e22;
+}
+section.list_produto tbody.corpo input.minus, section.list_produto tbody.corpo .plus {
+  color: #fff;
+  border: none;
+  background: #e67e22;
+  border-radius: 3px;
+}
+section.list_produto tbody.corpo input.minus:hover, section.list_produto tbody.corpo .plus:hover {
+  background: #343A40;
+}
+section.list_produto tbody.corpo input.qty {
+  border-radius: 3px;
+}
+
+section.td {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type=email] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type=password] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+div.checkbox a {
+  color: #fff;
+}
+div.checkbox a:hover {
+  color: #e67e22;
+}
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -10568,6 +10674,22 @@ a.text-dark:focus, a.text-dark:hover {
   }
   section.testimonials article {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 991px) {
+  section.cabecalho div.total {
+    margin-top: 15px;
+    margin-right: auto;
+  }
+}
+@media (max-width: 353px) {
+  section.cabecalho h2 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
   }
 }
 
